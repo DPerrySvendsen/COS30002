@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17720055-aeb3-471d-9864-a4edb903cd42}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <IsWindowsApplication>True</IsWindowsApplication>
+    <OutputPath>.</OutputPath>
+    <Name>maths_physics_movement</Name>
+    <RootNamespace>maths_physics_movement</RootNamespace>
+    <InterpreterId>2af0f10d-7135-4994-9156-5d01c9c11b7e</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="agent.py" />
+    <Compile Include="graphics.py" />
+    <Compile Include="main.py" />
+    <Compile Include="matrix33.py" />
+    <Compile Include="point2d.py" />
+    <Compile Include="vector2d.py" />
+    <Compile Include="world.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
